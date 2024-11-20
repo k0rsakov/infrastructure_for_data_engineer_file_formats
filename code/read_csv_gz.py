@@ -1,5 +1,5 @@
 import pandas as pd
 
-df = pd.read_csv('../data/data.csv.gz')
+df = pd.read_csv("../data/data.csv.gz")
 
 print(df)

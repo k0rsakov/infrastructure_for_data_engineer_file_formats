@@ -18,6 +18,7 @@ def measure_formats() -> pd.DataFrame:
         "csv": "../data/data.csv",
         "csv.gz": "../data/data.csv.gz",
         "json": "../data/data.json",
+        # "avro": "../data/data.avro",
     }
 
     for format_name, filename in files.items():

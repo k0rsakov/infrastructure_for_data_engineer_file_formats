@@ -5,7 +5,7 @@ import pandas as pd
 from faker import Faker
 
 
-def generate_users(size_of_generate: int = 1000000) -> pd.DataFrame:
+def generate_users(size_of_generate: int = 1000) -> pd.DataFrame:
     """
     Функция-генератор.
 

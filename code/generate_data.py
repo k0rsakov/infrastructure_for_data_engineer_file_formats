@@ -20,7 +20,7 @@ def generate_users(size_of_generate: int = 1000) -> pd.DataFrame:
 
     for _ in range(size_of_generate):
         dict_ = {
-            "id": uuid.uuid4(),
+            "id": str(uuid.uuid4()),
             "created_at": fake.date_time_ad(
                 start_datetime=datetime.date(year=2024, month=1, day=1),
                 end_datetime=datetime.date(year=2025, month=1, day=1),

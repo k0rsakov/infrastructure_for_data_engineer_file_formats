@@ -84,9 +84,11 @@ python = "^3.12.1"
 ruff = "^0.7.1"
 Faker = "^30.3.0"
 pandas = "^2.2.3"
+pyarrow = "^18.0.0"
 
 [tool.poetry.group.dev.dependencies]
 python = "^3.12.1"
 ruff = "^0.7.1"
 Faker = "^30.3.0"
 pandas = "^2.2.3"
+pyarrow = "^18.0.0"

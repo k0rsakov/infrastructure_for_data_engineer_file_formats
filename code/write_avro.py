@@ -1,8 +1,8 @@
 import json
 
 import avro.schema
-from avro.datafile import DataFileReader, DataFileWriter
-from avro.io import DatumReader, DatumWriter
+from avro.datafile import DataFileWriter
+from avro.io import DatumWriter
 from generate_data import generate_users
 
 df = generate_users(size_of_generate=1)
@@ -23,10 +23,12 @@ schema = {
         {"name": "city", "type": "string"},
     ],
 }
+
 # Преобразуем datetime колонки в строки
-datetime_columns = ['created_at', 'updated_at', 'birthday']
+datetime_columns = ["created_at", "updated_at", "birthday"]
 for col in datetime_columns:
     df[col] = df[col].astype(str)
+
 # Запись в Avro
 with DataFileWriter(
         open("../data/data.avro", "wb"),
